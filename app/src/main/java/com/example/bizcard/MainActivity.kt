@@ -118,7 +118,7 @@ fun Content() {
             shape = RoundedCornerShape(corner = CornerSize(8.dp)),
             border = BorderStroke(width = 4.dp, color = Gray)
         ) {
-            Projects(data = listOf("To-Do-List", "Movie DB", "InSight","Khloud",""))
+            Projects(data = listOf("To-Do-List", "Movie DB", "InSight"))
         }
 
     }
