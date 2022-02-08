@@ -66,7 +66,7 @@ fun CreateCard() {
 
         Card(
             modifier = Modifier
-                .width(200.dp)
+                .width(100.dp)
                 .height(380.dp)
                 .padding(12.dp),
             shape = RoundedCornerShape(corner = CornerSize(16.dp)),
@@ -118,8 +118,7 @@ fun Content() {
             shape = RoundedCornerShape(corner = CornerSize(8.dp)),
             border = BorderStroke(width = 4.dp, color = Gray)
         ) {
-            Projects(data = listOf("To-Do-List", "Movie DB", "InSight"))
-
+            Projects(data = listOf("To-Do-List", "Movie DB", "InSight","Khloud",""))
         }
 
     }
@@ -171,7 +170,7 @@ private fun InfoText() {
 
 @Composable
 private fun ProfileDevider() {
-    Divider(thickness = 8.dp, startIndent = 8.dp)
+    Divider(thickness = 8.dp,)
 }
 
 @Composable
@@ -201,7 +200,7 @@ private fun CreateImageProfile(modifier: Modifier = Modifier) {
 @Composable
 fun DefaultPreview() {
     BizcardTheme {
-//        CreateCard()
-        Content()
+        CreateCard()
+//        Content()
     }
 }
